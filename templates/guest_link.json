@@ -1,0 +1,55 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+
+      {
+          "type": "TextBlock",
+          "text": "Hi **{{{user_name}}}**!",
+          "color": "accent",
+          "wrap": true
+      },
+      {
+          "type": "TextBlock",
+          "text": "Welcome to Cisco Edge Centre in {{{location}}}",
+          "color": "good",
+          "wrap": true
+      }
+
+    ]
+  },
+      {
+        "type": "Container",
+        "style": "emphasis",
+        "items": [
+
+          {
+          "type": "TextBlock",
+          "text": "Please use the password below to connect to the WiFi",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "Password: **{{{password}}}**",
+          "wrap": true
+        }
+
+        ]
+      }
+
+    ],
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "connect",
+          "ActionStyle": "positive",
+          "url": "{{{user_link}}}"
+        }
+      ]
+    }

@@ -1,0 +1,53 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "fallbackText": "To run this API demo, view this message in a supported [Webex Teams](https://www.webex.com/downloads.html) client.",
+    "body": [
+
+        {
+            "type": "TextBlock",
+            "text": ""
+        },
+        {
+            "type": "Container",
+            "style": "good",
+            "items": [
+
+                {
+                    "type": "TextBlock",
+                    "text": "**Partner Registration request**",
+                    "color": "accent",
+                    "wrap": true
+
+                }
+              ]
+            },
+
+            {
+                "type": "Container",
+                "style": "emphasis",
+                "items": [
+
+                {
+                    "type": "TextBlock",
+                    "text": "Location: **{{{location}}}**",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Name: **{{{display_name}}}**",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Email: **{{{user_email}}}**",
+                    "wrap": true
+                }
+
+            ]
+
+            }
+    ]
+
+}

@@ -1,0 +1,6 @@
+Flask
+requests
+webexteamssdk
+gunicorn
+pymongo
+pystache

@@ -1,0 +1,154 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "fallbackText": "To run this API demo, view this message in a supported [Webex Teams](https://www.webex.com/downloads.html) client.",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": 70,
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Welcome to Cisco WiFi network  Powered by Meraki",
+                                    "wrap": true,
+                                    "color":"good",
+                                    "horizontalAlignment":"Center",
+                                    "verticalContentAlignment": "Center",
+                                    "weight": "Bolder",
+                                    "id": "lbl_org_name",
+                                    "size": "Medium"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": 0,
+                            "spacing": "None",
+                            "horizontalAlignment": "Center",
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": ""
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "But first....",
+                    "wrap": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": 30,
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Please select your Location",
+                                    "wrap": true,
+                                    "size": "default"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": 30,
+                            "items": [
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "placeholder": "",
+                                    "choices": [
+                                        {
+                                            "title": "Pretoria",
+                                            "value": "Pretoria"
+                                        },
+                                        {
+                                            "title": "Durban",
+                                            "value": "Durban"
+                                        },
+                                        {
+                                            "title": "Nairobi",
+                                            "value": "Nairobi"
+                                        }
+                                    ],
+                                    "style": "expanded",
+                                    "id": "location"
+                                }
+                            ]
+                        }
+                    ],
+                    "style": "good"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": 30,
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Are you a Cisco Parner or Guest?",
+                                    "wrap": true,
+                                    "size": "default"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": 30,
+                            "items": [
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "placeholder": "",
+                                    "choices": [
+                                        {
+                                            "title": "Partner",
+                                            "value": "partner"
+                                        },
+                                        {
+                                            "title": "Guest",
+                                            "value": "guest"
+                                        }
+
+                                    ],
+                                    "style": "expanded",
+                                    "id": "user_type"
+                                }
+                            ]
+                        }
+                    ],
+                    "style": "good"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "id": "submit_on"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        }
+    ]
+}

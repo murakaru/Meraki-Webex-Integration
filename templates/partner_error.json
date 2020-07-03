@@ -1,0 +1,36 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+
+      {
+          "type": "TextBlock",
+          "text": "Hello **{{{display_name}}}**!",
+          "color": "accent",
+          "wrap": true
+      },
+      {
+          "type": "TextBlock",
+          "text": "You are already registered as a Cisco partner in {{{location}}}.",
+          "wrap": true
+
+      },
+      {
+          "type": "TextBlock",
+          "text": "Please select **Partner** above to proceed ",
+          "wrap": true
+
+      }
+
+    ]
+  }
+
+]
+
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+
+      {
+          "type": "TextBlock",
+          "text": "Please select both fields above ",
+            "color": "attention",
+          "wrap": true
+
+      }
+
+    ]
+  }
+
+]
+
+}
